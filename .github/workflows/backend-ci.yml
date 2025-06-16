@@ -41,6 +41,5 @@ jobs:
         java-version: 17
 
     - name: Build with Maven
-      run: |
-        cd viatab-backend
-        ./mvnw clean install
+      run: mvn clean install
+      working-directory: viatab-backend
